@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap");
+
+.magic-text {
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fec012aaf16bdc1b5e9436995d652fda-gnXp5oIeYTjwjXmzp2wBDJFFfrvdJP.gif")
+    center center;
+  background-size: cover;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
